@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2B84B051-9936-4E0D-AA2E-7065A03E87E9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FlipView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9EFCA00213B2D8DDF712BD0351DE14B3BF73D6A2</key>
+		<string>ssh://github.com/nostalnurd/diancai.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FlipView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9EFCA00213B2D8DDF712BD0351DE14B3BF73D6A2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/nostalnurd/diancai.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9EFCA00213B2D8DDF712BD0351DE14B3BF73D6A2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9EFCA00213B2D8DDF712BD0351DE14B3BF73D6A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>diancai</string>
+		</dict>
+	</array>
+</dict>
+</plist>

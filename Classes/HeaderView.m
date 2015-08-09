@@ -44,8 +44,8 @@
 	
 	
 	UIImageView* userImageView = [[UIImageView alloc] init];
-	userImageView.image = [UIImage imageNamed:@"missing-people.png"];
-	[userImageView setFrame:CGRectMake(10, 1, 50, 58)];
+	userImageView.image = [UIImage imageNamed:@"huoguo.jpg"];
+	[userImageView setFrame:CGRectMake(10, 1, 50, 48)];
 	[self addSubview:userImageView];
 	[userImageView release];
 	
