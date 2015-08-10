@@ -10,22 +10,29 @@
 	if (self = [super init]) {
 		messageModel = model;
 		
+		// full screen set background color , text color is RGBCOLOR(33,33,33);
 		[self setBackgroundColor:RGBCOLOR(243,243,243)];
 		
+		// content view set background color 
 		contentView = [[UIView alloc] init];
 		[contentView setBackgroundColor:RGBCOLOR(243,243,243)];
 		
 		userImageView = [[UIImageView alloc] init];
 		[userImageView setBackgroundColor:[UIColor clearColor]];
+
+		//origin photo x 3 
 		[userImageView setFrame:CGRectMake(10, 10, 520, 520)];
 		[userImageView setImage:[UIImage imageNamed:@"shanyao.jpg"]];
 		[contentView addSubview:userImageView];
 		
+		// messageModel 
 		userNameLabel = [[UILabel alloc] init];
 		userNameLabel.font =[UIFont fontWithName:@"Helvetica" size:25];
 		[userNameLabel setTextColor:RGBCOLOR(2,90,177)];
 		[userNameLabel setBackgroundColor:[UIColor clearColor]];
 		[userNameLabel setText:[NSString stringWithFormat:@"%@",messageModel.userName]];
+
+		// 
 		[userNameLabel setFrame:CGRectMake(userImageView.frame.origin.x + userImageView.frame.size.width + 10, 5, 0, 0)];
 		[contentView addSubview:userNameLabel];
 		
@@ -40,9 +47,13 @@
 		
 		scrollView = [[UIScrollView alloc] init];
 		[scrollView setBackgroundColor:[UIColor clearColor]];
+		
+
+		// set up user image view, 10, userImageView.frame.y, set up user Image view height. 
 		[scrollView setFrame:CGRectMake(10, userImageView.frame.origin.y + userImageView.frame.size.height + 10, 0, 0)];
 		[contentView addSubview:scrollView];
 		
+
 		messageLabel = [[UILabel alloc] init];
 		messageLabel.numberOfLines = 0;	
 		messageLabel.font = [UIFont fontWithName:@"Helvetica" size:22];		
@@ -55,6 +66,8 @@
 		
 		closeButton = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
 		UIImageView* closeImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"close-popup.png"]];
+
+		// the height and width for "close-popup.png" is 9 x 9
 		[closeImage setFrame:CGRectMake(6, 6, 17, 17)];
 		[closeButton addSubview:closeImage];
 		[closeImage release];

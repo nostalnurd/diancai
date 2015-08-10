@@ -1,33 +1,3 @@
-/*
- This module is licensed under the MIT license.
- 
- Copyright (C) 2011 by raw engineering
- 
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- 
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
- 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- THE SOFTWARE.
- */
-//
-//  TitleAndTextView.m
-//  FlipView
-//
-//  Created by Reefaq Mohammed on 16/07/11.
- 
-//
 
 #import "TitleAndTextView.h"
 #import "MessageModel.h"
@@ -37,7 +7,8 @@
 @synthesize messageModel;
 
 - (id) initWithMessageModel:(MessageModel*)messagemodel{
-	if (self = [super init]) {
+	
+if (self = [super init]) {
 		self.messageModel = messagemodel;
 		[self initializeFields];
 		
@@ -50,10 +21,11 @@
 }
 
 - (void)reAdjustLayout{
-
+	// readjust 
 	[contentView setFrame:CGRectMake(1, 1, self.frame.size.width-2, self.frame.size.height - 2)];
 	
 	CGSize contentViewArea = CGSizeMake((contentView.frame.size.width - 20), (contentView.frame.size.height-30));
+	
 	
 	[userNameLabel sizeToFit];
 	[userNameLabel setFrame:CGRectMake(userImageView.frame.origin.x + userImageView.frame.size.width + 10, 5, (contentViewArea.width - (userImageView.frame.size.width + 10)), userNameLabel.frame.size.height)];
