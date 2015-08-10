@@ -104,6 +104,151 @@
         
 
         
+        // message 7
+        MessageModel* messageModel7 = [[MessageModel alloc] init];
+        messageModel7.messageID= 7;
+        messageModel7.userName = @"自选酱料";
+        messageModel7.userImage =  @"missing-people.png";
+        messageModel7.createdAt = @"5元每份";
+        messageModel7.content = @"沙茶酱，番茄酱，醋，酱油，芝麻酱.";
+        
+        [messageArrayCollection addObject:messageModel7];
+        [messageModel7 release];
+        
+        
+        // message 8
+        MessageModel* messageModel8 = [[MessageModel alloc] init];
+        messageModel8.messageID= 8;
+        messageModel8.userName = @"五花肉片";
+        messageModel8.userImage =  @"missing-people.png";
+        messageModel8.createdAt = @"12元／份";
+        messageModel8.content = @"五花肉片哦";
+        
+        [messageArrayCollection addObject:messageModel8];
+        [messageModel8 release];
+        
+        //message 9
+        
+        MessageModel* messageModel9 = [[MessageModel alloc] init];
+        messageModel9.messageID= 9;
+        messageModel9.userName = @"糖醋排骨";
+        messageModel9.userImage =  @"missing-people.png";
+        messageModel9.createdAt = @"06/07/2011 at 01:00 AM";
+        messageModel9.content = @"糖醋排骨";
+        
+        [messageArrayCollection addObject:messageModel9];
+        [messageModel9 release];
+        
+        // message 10
+        MessageModel* messageModel10 = [[MessageModel alloc] init];
+        messageModel10.messageID= 10;
+        messageModel10.userName = @"自选饮料";
+        messageModel10.userImage =  @"missing-people.png";
+        messageModel10.createdAt = @"5元一瓶";
+        messageModel10.content = @"青岛啤酒，可口可乐，雪碧，芬达。";
+        
+        [messageArrayCollection addObject:messageModel10];
+        [messageModel10 release];
+        
+        
+        // message 11
+        MessageModel* messageModel11 = [[MessageModel alloc] init];
+        messageModel11.messageID= 11;
+        messageModel11.userName = @"山药";
+        messageModel11.userImage =  @"shanyao.jpg";
+        messageModel11.createdAt = @"8元／盘";
+        messageModel11.content = @"山药哦新鲜的山药哦.";
+        
+        [messageArrayCollection addObject:messageModel11];
+        [messageModel11 release];
+        
+        
+        // message 12
+        MessageModel* messageModel12 = [[MessageModel alloc] init];
+        messageModel12.messageID= 12;
+        messageModel12.userName = @"玉米饼";
+        messageModel12.userImage =  @"missing-people.png";
+        messageModel12.createdAt = @"25RMB";
+        messageModel12.content = @"玉米饼";
+        
+        [messageArrayCollection addObject:messageModel12];
+        [messageModel12 release];
+
+        
+        
+        
+        // message 13
+        MessageModel* messageModel13 = [[MessageModel alloc] init];
+        messageModel13.messageID= 13;
+        messageModel13.userName = @"自选酱料";
+        messageModel13.userImage =  @"missing-people.png";
+        messageModel13.createdAt = @"5元每份";
+        messageModel13.content = @"沙茶酱，番茄酱，醋，酱油，芝麻酱.";
+        
+        [messageArrayCollection addObject:messageModel13];
+        [messageModel13 release];
+        
+        
+        // message 141
+        MessageModel* messageModel14 = [[MessageModel alloc] init];
+        messageModel14.messageID= 14;
+        messageModel14.userName = @"五花肉片";
+        messageModel14.userImage =  @"missing-people.png";
+        messageModel14.createdAt = @"12元／份";
+        messageModel14.content = @"五花肉片哦";
+        
+        [messageArrayCollection addObject:messageModel14];
+        [messageModel14 release];
+        
+        //message 15
+        
+        MessageModel* messageModel15 = [[MessageModel alloc] init];
+        messageModel15.messageID= 15;
+        messageModel15.userName = @"糖醋排骨";
+        messageModel15.userImage =  @"missing-people.png";
+        messageModel15.createdAt = @"06/07/2011 at 01:00 AM";
+        messageModel15.content = @"糖醋排骨";
+        
+        [messageArrayCollection addObject:messageModel15];
+        [messageModel15 release];
+        
+        // message 16
+        MessageModel* messageModel16 = [[MessageModel alloc] init];
+        messageModel16.messageID= 16;
+        messageModel16.userName = @"自选饮料";
+        messageModel16.userImage =  @"missing-people.png";
+        messageModel16.createdAt = @"5元一瓶";
+        messageModel16.content = @"青岛啤酒，可口可乐，雪碧，芬达。";
+        
+        [messageArrayCollection addObject:messageModel16];
+        [messageModel16 release];
+        
+        
+        // message 17
+        MessageModel* messageModel17 = [[MessageModel alloc] init];
+        messageModel17.messageID= 17;
+        messageModel17.userName = @"山药";
+        messageModel17.userImage =  @"shanyao.jpg";
+        messageModel17.createdAt = @"8元／盘";
+        messageModel17.content = @"山药哦新鲜的山药哦.";
+        
+        [messageArrayCollection addObject:messageModel17];
+        [messageModel17 release];
+        
+        
+        // message 18
+        MessageModel* messageModel18 = [[MessageModel alloc] init];
+        messageModel18.messageID= 18;
+        messageModel18.userName = @"玉米饼";
+        messageModel18.userImage =  @"missing-people.png";
+        messageModel18.createdAt = @"25RMB";
+        messageModel18.content = @"玉米饼";
+        
+        [messageArrayCollection addObject:messageModel18];
+        [messageModel18 release];
+
+        
+        
         
         
         
@@ -298,9 +443,9 @@
 		[UIView setAnimationTransition:UIViewAnimationTransitionNone forView:nil cache:NO];
 		fullScreenBGView.alpha = 1;
 		if (self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-			[fullView setFrame:CGRectMake(10, 50, 768-20, 1004-60)];
+			[fullView setFrame:CGRectMake(10, 80, 768-20, 1004-60)];
 		}else {
-			[fullView setFrame:CGRectMake(10, 50, 1024-20, 746-60)];
+			[fullView setFrame:CGRectMake(10, 80, 1024-20, 746-60)];
 		}
 		[fullScreenView rotate:self.interfaceOrientation animation:YES];
 		[UIView setAnimationDelegate:self];
@@ -422,7 +567,7 @@
 	
 	for (int i=1; i<=numOfGroup; i++) {
 		remainingMessageCount = totalMessageCount - (i * 5);
-		int randomNumber = [self getRandomNumber:5 to:8];
+		int randomNumber = [self getRandomNumber:1 to:8];
 		
 		[viewControlerStack addObject:[NSString stringWithFormat:@"%d",randomNumber]];
 	}

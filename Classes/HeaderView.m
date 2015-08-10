@@ -22,8 +22,8 @@
 	userImageView.image = [UIImage imageNamed:@"huoguo.jpg"];
 
 	// the size of the photo in the header (x1, y1, x2, y2)
-	//[userImageView setFrame:CGRectMake(10, 1, 50, 48)];
-	[userImageView setFrame:CGRectMake(10,10,50,50)];
+	[userImageView setFrame:CGRectMake(10, 1, 50, 48)];
+	//[userImageView setFrame:CGRectMake(10,10,50,50)];
 
 	// 
 	[self addSubview:userImageView];
