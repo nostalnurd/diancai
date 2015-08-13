@@ -6,11 +6,13 @@
 
 @synthesize messageModel;
 
+// init with Message Model 
 - (id) initWithMessageModel:(MessageModel*)messagemodel{
 	
 if (self = [super init]) {
 		self.messageModel = messagemodel;
 		[self initializeFields];
+		
 		
 		UITapGestureRecognizer* tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
 		[self addGestureRecognizer:tapRecognizer];
@@ -21,18 +23,20 @@ if (self = [super init]) {
 }
 
 - (void)reAdjustLayout{
-	// readjust 
+	// readjust Layout in the main page
 	[contentView setFrame:CGRectMake(1, 1, self.frame.size.width-2, self.frame.size.height - 2)];
 	
 	CGSize contentViewArea = CGSizeMake((contentView.frame.size.width - 20), (contentView.frame.size.height-30));
 	
-	
+	// User Name Label
 	[userNameLabel sizeToFit];
 	[userNameLabel setFrame:CGRectMake(userImageView.frame.origin.x + userImageView.frame.size.width + 10, 5, (contentViewArea.width - (userImageView.frame.size.width + 10)), userNameLabel.frame.size.height)];
+
+	// 时间（价格）
 	[timeStampLabel sizeToFit];
 	[timeStampLabel setFrame:CGRectMake(userNameLabel.frame.origin.x, userNameLabel.frame.origin.y + userNameLabel.frame.size.height, timeStampLabel.frame.size.width, timeStampLabel.frame.size.height)];
 
-	
+	// 
 	[messageLabel setFrame:CGRectMake(userImageView.frame.origin.x ,(userImageView.frame.origin.y + userImageView.frame.size.height), contentViewArea.width, contentViewArea.height - (userImageView.frame.origin.y + userImageView.frame.size.height))];	
 		
 		
@@ -47,6 +51,7 @@ if (self = [super init]) {
 }
 
 - (void) initializeFields {
+	// 主页面 = contentView
 	contentView = [[UIView alloc] init];
 	[contentView setBackgroundColor:[UIColor whiteColor]];
 	contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -64,6 +69,7 @@ if (self = [super init]) {
 	[contentView addSubview:userNameLabel];
 	
 	
+	// 显示时间（价格）
 	timeStampLabel = [[UILabel alloc] init];
 	[timeStampLabel setText:messageModel.createdAt];
 	timeStampLabel.font =[UIFont fontWithName:@"Helvetica" size:12];
@@ -81,6 +87,8 @@ if (self = [super init]) {
 	messageLabel.numberOfLines = 0;
 	[contentView addSubview:messageLabel];
 	
+
+	// Content 页面
 	[self addSubview:contentView];
 	
 	[self reAdjustLayout];

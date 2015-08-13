@@ -10,6 +10,7 @@
 @synthesize userName;
 @synthesize userImage;
 
+// Message Model Object
 -(id)initWithMessageObject:(NSDictionary*)messageObject {
 	if (self = [super init]) {
 		self.messageID = (NSInteger)[[messageObject objectForKey:@"id"] intValue];

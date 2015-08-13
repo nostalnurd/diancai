@@ -473,6 +473,8 @@
 
 -(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
 	if (fullScreenView != nil) {
+
+//
 		[UIView beginAnimations:@"WILLROTATE" context:NULL];
 		[UIView setAnimationDuration:0.50];
 		[UIView setAnimationCurve:UIViewAnimationOptionCurveEaseInOut];
